@@ -24,18 +24,17 @@ Aplikasi ini mendukung konversi antar format berikut:
 
 EasyConvert/
 ├── lib/
-│   ├── main.dart
-│   ├── screens/
-│   │   └── home_screen.dart
-│   ├── widgets/
-│   │   └── file_picker_widget.dart
-│   └── services/
-│       └── api_service.dart
+│ ├── main.dart
+│ ├── screens/
+│ │ └── home_screen.dart
+│ ├── widgets/
+│ │ └── file_picker_widget.dart
+│ └── services/
+│ └── api_service.dart
 ├── backend/
-│   ├── main.py
-│   ├── uploads/
-│   └── converted/
-
+│ ├── main.py
+│ ├── uploads/
+│ └── converted/
 
 ---
 
