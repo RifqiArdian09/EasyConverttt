@@ -1,28 +1,31 @@
 # EasyConvert
 
-EasyConvert adalah aplikasi konversi dokumen berbasis **Flutter Web** dengan backend **FastAPI**.  
-Aplikasi ini memungkinkan pengguna untuk mengunggah dokumen dan mengubah formatnya (misalnya dari DOCX ke PDF, PPTX ke DOCX, dll) secara cepat dan mudah.
+**EasyConvert** adalah aplikasi berbasis Flutter Web yang memungkinkan pengguna untuk mengonversi dokumen antar format populer seperti PDF, DOCX, dan PPTX. Backend aplikasi dibangun menggunakan **FastAPI** dengan bantuan **LibreOffice** untuk menangani proses konversi file.
 
 ---
 
-## 🚀 Fitur
-- Upload file langsung dari browser
-- Konversi ke berbagai format (DOCX, PDF, PPTX, dll)
-- Menggunakan AI Layout Suggestion (opsional)
-- UI modern dan responsif
+## 🔧 Fitur
+
+- Upload file dokumen (PDF, DOCX, PPTX).
+- Pilih format target dan lakukan konversi.
+- Hasil dapat langsung diunduh melalui web.
 
 ---
 
-## 🧩 Teknologi
-- **Frontend**: Flutter Web
-- **Backend**: Python + FastAPI + LibreOffice
-- **API Komunikasi**: `http://localhost:8000` (ubah jika perlu)
+## 📦 Teknologi yang Digunakan
+
+### Frontend
+- [Flutter Web](https://flutter.dev/web)
+
+### Backend
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [LibreOffice CLI](https://wiki.documentfoundation.org/Documentation/CommandLineArguments)
 
 ---
 
-## ⚙️ Cara Clone & Menjalankan
+## 🚀 Cara Menjalankan Project
 
-### 1. Clone Repositori
+### 1. Clone Repository
 ```bash
 git clone https://github.com/RifqiArdian09/EasyConverttt.git
 cd EasyConverttt
