@@ -21,21 +21,21 @@ Aplikasi ini mendukung konversi antar format berikut:
 ---
 
 ## 📁 Struktur Proyek
-
 EasyConvert/
-├── lib/
-│ ├── main.dart
-│ ├── screens/
-│ │ └── home_screen.dart
-│ ├── widgets/
-│ │ └── file_picker_widget.dart
-│ └── services/
-│ └── api_service.dart
-├── backend/
-│ ├── main.py
-│ ├── uploads/
-│ └── converted/
-
+├── lib/                      # Kode sumber aplikasi Flutter (Frontend)
+│   ├── main.dart             # Titik masuk utama aplikasi Flutter
+│   ├── screens/              # Layar/halaman UI aplikasi
+│   │   └── home_screen.dart  # Layar utama untuk pemilihan dan konversi file
+│   ├── widgets/              # Widget UI yang dapat digunakan kembali
+│   │   └── file_picker_widget.dart # Widget untuk memilih file
+│   └── services/             # Layanan untuk berinteraksi dengan API backend
+│       └── api_service.dart  # Logika untuk panggilan API ke backend
+├── backend/                  # Kode sumber aplikasi Python (Backend)
+│   ├── main.py               # Logika utama server backend
+│   ├── uploads/              # Direktori untuk menyimpan file yang diunggah sementara
+│   └── converted/            # Direktori untuk menyimpan file hasil konversi
+├── .gitignore                # File yang diabaikan oleh Git
+└── README.md                 # Deskripsi proyek ini
 ---
 
 ## 🚀 Cara Menjalankan
