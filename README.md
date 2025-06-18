@@ -42,10 +42,11 @@ cd EasyConverttt
 
 ### 2. Menjalankan Backend (FastAPI)
 ```bash
-# ✅ Persyaratan:
+## ✅ Persyaratan:
 - Python 3.10 atau lebih
 - LibreOffice sudah terinstal (bisa diakses via command line)
-
+```
+```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate        # Untuk Windows
