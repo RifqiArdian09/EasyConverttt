@@ -35,7 +35,7 @@ cd EasyConverttt
 
 ### 2. Menjalankan Backend (FastAPI)
 
-## ✅ Persyaratan:
+# ✅ Persyaratan:
 - Python 3.10 atau lebih
 - LibreOffice sudah terinstal (bisa diakses via command line)
 
@@ -56,7 +56,7 @@ uvicorn main:app --reload
 
 ### 3. Menjalankan Frontend (Flutter Web)
 
-## ✅ Persyaratan:
+# ✅ Persyaratan:
 - Flutter SDK (disarankan versi terbaru)
 
 ```bash
