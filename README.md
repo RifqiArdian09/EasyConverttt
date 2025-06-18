@@ -4,11 +4,19 @@
 
 ---
 
-## ✨ Fitur Utama
+## ✅ Format Dokumen yang Didukung
 
-- Upload file (PDF, DOCX, PPTX)
-- Pilih format tujuan
-- File hasil konversi bisa langsung diunduh
+Aplikasi ini mendukung konversi antar format berikut:
+
+| Format | Deskripsi                 |
+|--------|---------------------------|
+| PDF    | Portable Document Format |
+| DOC    | Microsoft Word 97–2003   |
+| DOCX   | Microsoft Word modern    |
+| PPT    | PowerPoint 97–2003       |
+| PPTX   | PowerPoint modern        |
+| ODT    | OpenDocument Text        |
+| TXT    | Plain Text File          |
 
 ---
 
