@@ -58,8 +58,8 @@ uvicorn main:app --reload
 ```
 
 📂 Folder Penting:
--uploads/ = tempat file yang diunggah
--converted/ = hasil file yang sudah dikonversi
+- uploads/ = tempat file yang diunggah
+- converted/ = hasil file yang sudah dikonversi
 
 
 
