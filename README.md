@@ -1,31 +1,58 @@
 # EasyConvert
 
-**EasyConvert** adalah aplikasi berbasis Flutter Web yang memungkinkan pengguna untuk mengonversi dokumen antar format populer seperti PDF, DOCX, dan PPTX. Backend aplikasi dibangun menggunakan **FastAPI** dengan bantuan **LibreOffice** untuk menangani proses konversi file.
+**EasyConvert** adalah aplikasi berbasis Flutter Web yang memungkinkan pengguna untuk mengonversi dokumen antar format populer seperti PDF, DOCX, dan PPTX. Aplikasi ini terdiri dari frontend (Flutter) dan backend (FastAPI) yang terintegrasi melalui API.
 
 ---
 
-## 🔧 Fitur
+## ✨ Fitur Utama
 
-- Upload file dokumen (PDF, DOCX, PPTX).
-- Pilih format target dan lakukan konversi.
-- Hasil dapat langsung diunduh melalui web.
-
----
-
-## 📦 Teknologi yang Digunakan
-
-### Frontend
-- [Flutter Web](https://flutter.dev/web)
-
-### Backend
-- [FastAPI](https://fastapi.tiangolo.com/)
-- [LibreOffice CLI](https://wiki.documentfoundation.org/Documentation/CommandLineArguments)
+- Upload file (PDF, DOCX, PPTX)
+- Pilih format tujuan
+- File hasil konversi bisa langsung diunduh
 
 ---
 
-## 🚀 Cara Menjalankan Project
+## 📁 Struktur Proyek
+
+EasyConvert/
+├── lib/
+│   ├── main.dart
+│   ├── screens/
+│   │   └── home_screen.dart
+│   ├── widgets/
+│   │   └── file_picker_widget.dart
+│   └── services/
+│       └── api_service.dart
+├── backend/
+│   ├── main.py
+│   ├── uploads/
+│   └── converted/
+
+
+---
+
+## 🚀 Cara Menjalankan
 
 ### 1. Clone Repository
+
 ```bash
 git clone https://github.com/RifqiArdian09/EasyConverttt.git
 cd EasyConverttt
+```
+
+### 2. Menjalankan Backend (FastAPI)
+```bash
+# ✅ Persyaratan:
+- Python 3.10 atau lebih
+- LibreOffice sudah terinstal (bisa diakses via command line)
+
+cd backend
+python -m venv venv
+venv\Scripts\activate        # Untuk Windows
+# source venv/bin/activate   # Untuk macOS/Linux
+
+pip install fastapi uvicorn python-multipart
+uvicorn main:app --reload
+
+```
+
