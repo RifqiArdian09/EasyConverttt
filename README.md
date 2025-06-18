@@ -149,12 +149,3 @@ The Flutter application should launch, and you can now pick a file and convert i
 5.  **Convert:** Click the "CONVERT NOW" button to initiate the conversion.
 6.  **Download/View Result:** Upon successful conversion, a success message will appear, indicating the converted filename. (Note: The current frontend only shows a success message; a download functionality would need to be implemented separately based on the `output_path` returned by the backend.)
 
-## Troubleshooting
-
-* **"Failed to load supported formats"**: Ensure your FastAPI backend is running and the `baseUrl` in `lib/services/api_service.dart` is correctly set to your backend's address (especially if running on a different machine or emulator).
-* **"Konversi gagal" (Conversion failed)**:
-    * Check the `LIBREOFFICE_PATH` in `backend/main.py` is correct for your LibreOffice installation.
-    * Review the backend logs for more detailed error messages.
-    * Ensure LibreOffice is not already running in the background.
-* **CORS Issues**: The backend has `CORSMiddleware` configured to allow all origins (`allow_origins=["*"]`). If you encounter CORS errors, double-check that the middleware is correctly applied and no other network configurations are blocking requests.
-* **File Permissions**: Ensure the `uploads/` and `converted/` directories in the backend have appropriate write permissions for the user running the FastAPI application.
