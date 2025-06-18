@@ -21,20 +21,8 @@ Aplikasi ini mendukung konversi antar format berikut:
 ---
 
 ## 📁 Struktur Proyek
-EasyConvert/
-├── lib/
-│ ├── main.dart
-│ ├── screens/
-│ │ └── home_screen.dart
-│ ├── widgets/
-│ │ └── file_picker_widget.dart
-│ └── services/
-│ └── api_service.dart
-├── backend/
-│ ├── main.py
-│ ├── uploads/
-│ └── converted/
----
+
+![struktur](https://github.com/RifqiArdian09/EasyConverttt/blob/main/lib/images/image.png)
 
 ## 🚀 Cara Menjalankan
 
