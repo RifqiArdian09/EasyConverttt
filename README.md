@@ -61,5 +61,15 @@ uvicorn main:app --reload
 - uploads/ = tempat file yang diunggah
 - converted/ = hasil file yang sudah dikonversi
 
+### 3. Menjalankan Frontend (Flutter Web)
+
+## ✅ Persyaratan:
+- Flutter SDK (disarankan versi terbaru)
+
+```bash
+flutter pub get
+flutter run -d chrome
+```
+
 
 
