@@ -41,11 +41,11 @@ cd EasyConverttt
 ```
 
 ### 2. Menjalankan Backend (FastAPI)
-```bash
+
 ## ✅ Persyaratan:
 - Python 3.10 atau lebih
 - LibreOffice sudah terinstal (bisa diakses via command line)
-```
+
 ```bash
 cd backend
 python -m venv venv
@@ -56,4 +56,10 @@ pip install fastapi uvicorn python-multipart
 uvicorn main:app --reload
 
 ```
+
+📂 Folder Penting:
+-uploads/ = tempat file yang diunggah
+-converted/ = hasil file yang sudah dikonversi
+
+
 
