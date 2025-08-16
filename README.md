@@ -1,71 +1,95 @@
-🔮 Advanced File Converter
-Aplikasi berbasis Flask + LibreOffice yang dirancang untuk mengonversi berbagai format file, seperti DOCX, PDF, PPTX, XLSX, TXT, dan CSV, melalui antarmuka web modern dan intuitif.
+# 🔮 File Converter
 
-Aplikasi ini bertujuan untuk menyederhanakan proses konversi file dengan fitur-fitur canggih seperti drag and drop, progress bar animasi, dan download otomatis.
+Aplikasi berbasis **Flask + LibreOffice** yang dirancang untuk mengonversi berbagai format file, seperti DOCX, PDF, PPTX, XLSX, TXT, dan CSV, melalui antarmuka web modern dan intuitif. 
 
-🚀 Fitur Utama
-🌙 Antarmuka Pengguna Modern: Tampilan tema gelap (dark theme) dengan fitur drag and drop untuk mengunggah file.
+Aplikasi ini bertujuan untuk menyederhanakan proses konversi file dengan fitur-fitur canggih seperti ***drag and drop***, *progress bar* animasi, dan *download* otomatis.
 
-📂 Dukungan Format Luas: Mampu mengonversi berbagai format file, termasuk:
+---
 
-Dokumen: DOC, DOCX, ODT, RTF, TXT, HTML, PDF
+## 🚀 Fitur Utama
 
-Spreadsheet: XLS, XLSX, ODS, CSV
+* 🌙 **Antarmuka Pengguna Modern**: Tampilan tema gelap (*dark theme*) dengan fitur *drag and drop* untuk mengunggah file.
 
-Presentasi: PPT, PPTX, ODP
+* 📂 **Dukungan Format Luas**: Mampu mengonversi berbagai format file, termasuk:
 
-⚡ Pengalaman Pengguna Interaktif: Menampilkan progress bar animasi yang informatif saat proses konversi berlangsung.
+  * **Dokumen**: DOC, DOCX, ODT, RTF, TXT, HTML, PDF
 
-📥 Kemudahan Penggunaan: File hasil akan secara otomatis diunduh ke perangkat Anda setelah konversi selesai.
+  * **Spreadsheet**: XLS, XLSX, ODS, CSV
 
-🛡️ Validasi File Aman: Memiliki validasi untuk membatasi ukuran file maksimum hingga 100MB guna menjaga stabilitas dan performa aplikasi.
+  * **Presentasi**: PPT, PPTX, ODP
 
-📦 Instalasi dan Penggunaan
+* ⚡ **Pengalaman Pengguna Interaktif**: Menampilkan *progress bar* animasi yang informatif saat proses konversi berlangsung.
+
+* 📥 **Kemudahan Penggunaan**: File hasil akan secara otomatis diunduh ke perangkat Anda setelah konversi selesai.
+
+* 🛡️ **Validasi File Aman**: Memiliki validasi untuk membatasi ukuran file maksimum hingga **100MB** guna menjaga stabilitas dan performa aplikasi.
+
+---
+
+## 📦 Instalasi dan Penggunaan
+
 Ikuti langkah-langkah di bawah ini untuk menginstal dan menjalankan aplikasi.
 
-1. Kloning Repositori
-git clone https://github.com/RifqiArdian09/FileConverter.git
-cd FileConverter
+### 1. Kloning Repositori
 
-2. Buat dan Aktifkan Virtual Environment
+```bash
+git clone [https://github.com/RifqiArdian09/FileConverter.git](https://github.com/RifqiArdian09/FileConverter.git)
+cd FileConverter
+```
+
+### 2. Buat dan Aktifkan Virtual Environment
+
 Virtual environment direkomendasikan untuk mengisolasi dependensi proyek.
 
+```bash
 # Membuat virtual environment
 python -m venv venv
 
 # Mengaktifkan virtual environment
 source venv/bin/activate    # Linux / macOS
 venv\Scripts\activate       # Windows
+```
 
-3. Instal Dependensi Python
-Pasang semua pustaka Python yang diperlukan dari file requirements.txt.
+### 3. Instal Dependensi Python
 
+Pasang semua pustaka Python yang diperlukan dari file `requirements.txt`.
+
+```bash
 pip install -r requirements.txt
+```
 
-4. Instalasi LibreOffice
-Pastikan LibreOffice terinstal di sistem Anda, karena aplikasi ini menggunakannya sebagai engine konversi.
+### 4. Instalasi LibreOffice
 
-Windows:
+Pastikan **LibreOffice** terinstal di sistem Anda, karena aplikasi ini menggunakannya sebagai *engine* konversi.
 
-Unduh dan instal LibreOffice dari situs resminya: https://www.libreoffice.org/download/
+* **Windows**:
 
-Secara default, path soffice.exe biasanya berada di C:\Program Files\LibreOffice\program\soffice.exe. Jika tidak, pastikan untuk menambahkannya ke variabel PATH sistem Anda.
+  * Unduh dan instal LibreOffice dari situs resminya: <https://www.libreoffice.org/download/>
 
-Linux / macOS:
+* Secara default, path `soffice.exe` biasanya berada di `C:\Program Files\LibreOffice\program\soffice.exe`. Jika tidak, pastikan untuk menambahkannya ke variabel ***PATH*** sistem Anda.
 
-Ubuntu / Debian:
+* **Linux / macOS**:
 
-sudo apt install libreoffice
+  * **Ubuntu / Debian**:
 
-macOS (menggunakan Homebrew):
+    ```bash
+    sudo apt install libreoffice
+    ```
 
-brew install --cask libreoffice
+  * **macOS (menggunakan Homebrew)**:
 
-5. Menjalankan Aplikasi
+    ```bash
+    brew install --cask libreoffice
+    ```
+
+### 5. Menjalankan Aplikasi
+
 Jalankan server aplikasi Flask dengan perintah berikut:
 
+```bash
 python app.py
+```
 
-Setelah server berjalan, buka browser Anda dan akses http://127.0.0.1:5000 untuk mulai menggunakan aplikasi.
+Setelah server berjalan, buka *browser* Anda dan akses `http://127.0.0.1:5000` untuk mulai menggunakan aplikasi.
 
-Butuh bantuan atau memiliki pertanyaan? Jangan ragu untuk membuka issue di repositori ini.
+---
